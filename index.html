@@ -1565,11 +1565,11 @@
 
     // Womens chart
     new Chart(document.getElementById('womenTotalStats'),
-            getScatterConfig('Women: Total Stats', womenTotal, 'Minutes', 'Total Stats', aggieBlue, black, aggieBlue,aggieBlue));
+            getScatterConfig('Women: Positive Box Score vs Minutes Per Game', womenTotal, 'MINUTES PER GAME', 'TOTAL SCORE', aggieBlue, black, aggieBlue,aggieBlue));
     new Chart(document.getElementById('womenTrueShooting'),
-            getScatterConfig('Women: Efficiency', womenTS, 'Minutes', 'Points Per Minute', aggieBlue, black, aggieBlue,aggieBlue));
+            getScatterConfig('Women:True Shooting Percentage vs Minutes Per Game', womenTS, 'MINUTES PER GAME', 'SHOOTING PERCENTAGE', aggieBlue, black, aggieBlue,aggieBlue));
     new Chart(document.getElementById('womenAssistTurnover'),
-            getScatterConfig('Women: Playmaking', womenAT, 'Minutes', 'AST Ratio', aggieBlue, black, aggieBlue,aggieBlue));
+            getScatterConfig('Women: Assist to Turnover Ratio vs Minutes Per Game', womenAT, 'MINUTES PER GAME', 'AST Ratio', aggieBlue, black, aggieBlue,aggieBlue));
   }
   document.addEventListener('DOMContentLoaded', () => {
     initScatterPlots();
